@@ -29,11 +29,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
     
     func sumAction(n1: String, n2: String) -> String {
-        if n1 != "" && n2 != "" {
-            return "\(Int(n1)! + Int(n2)!)"
+        if Int(n1) == nil && Int(n2) == nil {
+            return "\(0)"
         }
         else {
-            return "\(0)"
+            return "\(Int(n1)! + Int(n2)!)"
         }
     }
 
