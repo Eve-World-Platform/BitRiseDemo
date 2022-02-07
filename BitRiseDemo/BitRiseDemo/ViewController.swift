@@ -7,7 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
+    
+    @IBOutlet weak var num1 : UITextField!
+    @IBOutlet weak var num2 : UITextField!
+    @IBOutlet weak var num3 : UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
