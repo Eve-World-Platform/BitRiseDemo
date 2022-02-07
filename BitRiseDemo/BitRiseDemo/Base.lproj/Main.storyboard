@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="width" constant="50" id="xvY-OA-jUN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Sq1-F6-Men"/>
                                 </connections>
@@ -39,7 +39,7 @@
                                     <constraint firstAttribute="width" constant="50" id="Qtp-Aw-cn0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="svf-ML-jdL"/>
                                 </connections>
@@ -61,6 +61,14 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="8F1-iU-Joj"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7K-gT-Ugw">
+                                <rect key="frame" x="180.5" y="510" width="53" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Sum"/>
+                                <connections>
+                                    <action selector="sumClickedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMO-Og-bK8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -69,6 +77,7 @@
                             <constraint firstItem="Dpw-pB-cRf" firstAttribute="leading" secondItem="jUe-aX-aTZ" secondAttribute="trailing" constant="20" id="3PF-P4-KwC"/>
                             <constraint firstItem="W8M-LK-PSj" firstAttribute="leading" secondItem="35F-Fg-E8C" secondAttribute="trailing" constant="20" id="6XD-rf-BI4"/>
                             <constraint firstItem="Dpw-pB-cRf" firstAttribute="top" secondItem="jUe-aX-aTZ" secondAttribute="top" id="6Xq-ga-l6I"/>
+                            <constraint firstItem="B7K-gT-Ugw" firstAttribute="top" secondItem="4Fk-ei-ppM" secondAttribute="bottom" constant="40" id="ChS-Fi-jSO"/>
                             <constraint firstItem="4Fk-ei-ppM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HYk-tN-VFc"/>
                             <constraint firstItem="W8M-LK-PSj" firstAttribute="top" secondItem="4Fk-ei-ppM" secondAttribute="top" id="Vcx-Zt-FKd"/>
                             <constraint firstItem="jUe-aX-aTZ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bpY-rI-liR"/>
@@ -77,6 +86,7 @@
                             <constraint firstItem="Dpw-pB-cRf" firstAttribute="height" secondItem="jUe-aX-aTZ" secondAttribute="height" id="jra-L1-Eqk"/>
                             <constraint firstItem="35F-Fg-E8C" firstAttribute="top" secondItem="jUe-aX-aTZ" secondAttribute="top" id="lDP-B4-jbB"/>
                             <constraint firstItem="4Fk-ei-ppM" firstAttribute="leading" secondItem="Dpw-pB-cRf" secondAttribute="trailing" constant="20" id="nlO-tO-szZ"/>
+                            <constraint firstItem="B7K-gT-Ugw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sbr-TO-jWv"/>
                             <constraint firstItem="35F-Fg-E8C" firstAttribute="height" secondItem="Dpw-pB-cRf" secondAttribute="height" id="zyG-Db-MKP"/>
                         </constraints>
                     </view>

@@ -17,6 +17,25 @@ class ViewController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func sumClicked(sender: UIButton) {
+        guard let n1 = num1.text else {
+            return
+        }
+        guard let n2 = num2.text else {
+            return
+        }
+        num3.text = sumAction(n1: n1, n2: n2)
+    }
+    
+    func sumAction(n1: String, n2: String) -> String {
+        if n1 != "" && n2 != "" {
+            return "\(Int(n1)! + Int(n2)!)"
+        }
+        else {
+            return "\(0)"
+        }
+    }
 
 
 }
