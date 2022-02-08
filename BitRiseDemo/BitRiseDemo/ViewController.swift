@@ -33,6 +33,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
             return "\(0)"
         }
         else {
+            print("check")
             return "\(Int(n1)! + Int(n2)!)"
         }
     }
